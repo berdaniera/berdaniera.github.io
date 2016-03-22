@@ -246,7 +246,8 @@
 
 
   <script>
-     var height = 1000;
+     //var height = 1000;
+     var height = parseInt(d3.select('.topmain').style('height'), 10);
      //var width = window.innerWidth*0.95;    
      var width = parseInt(d3.select('.topmain').style('width'), 10);
      var x = d3.scale.linear().range([0,width]);
