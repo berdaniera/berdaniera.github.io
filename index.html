@@ -1,58 +1,336 @@
-<!doctype html>
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Hi. My name is Aaron and I&#39;m a Data Scientist.  I live and work in Durham, NC on projects about the environment, real estate, and human health. by berdaniera</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
+    <title>Aaron Berdanier</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Martel:400,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Hi. My name is Aaron and I&#39;m a Data Scientist.  I live and work in Durham, NC on projects about the environment, real estate, and human health.</h1>
-        <p></p>
 
+</head>
 
-        <p class="view"><a href="https://github.com/berdaniera">View My GitHub Profile</a></p>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-      </header>
-      <section>
-        <h2>
-<a id="about-me" class="anchor" href="#about-me" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About me</h2>
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-leaf"></i>  <span class="light">Aaron</span> Berdanier
+                </a>
+            </div>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#research">Research</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#teaching">Teaching</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#publications">Publications</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-<h3>
-<a id="science" class="anchor" href="#science" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Science</h3>
+    <!-- Intro Header -->
+    <header class="intro">
+    <div class="topmain"></div>
+    <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Hi, my name is Aaron.</h1>
+                        <p class="intro-text">I'm an ecologist and data scientist.<br>I currently work in Durham, NC on projects related to forests and water.</p>
+                        
+                        <a href="mailto:aaron.berdanier@gmail.com" class="btn2">
+                            <i class="fa fa-envelope-o animated fa-4x"></i>
+                        </a>
+                        <a href="http://linkedin.com/berdaniera" class="btn2">
+                            <i class="fa fa-linkedin animated fa-4x"></i>
+                        </a>
+                        <a href="http://github.com/berdaniera" class="btn2">
+                            <i class="fa fa-github animated fa-4x"></i>
+                        </a>
+                        <a href="http://twitter.com/berdaniera" class="btn2">
+                            <i class="fa fa-twitter animated fa-4x"></i>
+                        </a>
+                        <br><br>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </header>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Me</h2>
+                <p>I am a statistical ecologist interested in forests and water, data science, and entrepreneurship. As a researcher at Duke University and Colorado State University, I have initiated, collaborated on, and completed scientific projects to measure international greenhouse gas emissions and predict forest responses to climate. My academic work is <a class="page-scroll" href="#publications">published in multiple peer-reviewed journals</a>.</p>
+                <p>I have a MS degree from Colorado State University and a BS degree from Beloit College, and I am completing my Ph.D. degree in April 2016, after which I look forward to applying my analytical skills to help people better manage their relationships with the environment.</p>
+                <p>I also love restoring my old house in Durham, making maps, climbing, and doing yoga.</p>
+            </div>
+        </div>
+    </section>
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="in-touch" class="anchor" href="#in-touch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In touch</h3>
-
-<p>Contact me at <a href="mailto:aaron.berdanier@gmail.com">gmail</a> and <a href="http://twitter.com/berdaniera">twitter</a>.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <!-- About Section -->
+    <section id="research" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Projects</h2>
+                <p>My current scientific projects are focused on the impacts of trees on local water balance and the consequences of changing forests for water quality and quantity. Recently, I examined the response of forests to drought with colleagues, where we were able to predict tree death after droughts. I have worked on global greenouse gas budgets to understand how agricultural practices affect nitrogen cycling.</p>
+                <p>I am continually thinking about how my work can add value for people. I was involved in a project to develop an advanced system for measuring forests with remote sensing and unmanned aerial vehicles that is accessible and easy to use for both small and large forest landowners. This project provided knowledge that could someday be used for rapid forest inventories and reliable carbon accounting.</p>
+            </div>
+        </div>
+    </section>
     
-  </body>
+        <!-- About Section -->
+    <section id="teaching" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Teaching</h2>
+                <p>I am excited about helping students learn science by doing what scientists do—collecting and analyzing data, synthesizing information, and communicating results to a variety of audiences.</p>
+
+<p>I have developed multiple inquiry-based educational modules for undergraduate and graduate students and I encourage active exploration and discussion in my lectures and exercises. I have taught courses at Duke University and Beloit College, including courses on plant biology, global change biology, and environmental science. I have also given guest lectures in data science and environmental statistics courses at Duke.</p>
+
+<p>Also at Duke, I have co-organized a working group on environmental data analysis and visualization with <a href="http://www.matthewrvross.com/">Matt Ross</a>. Lessons for that course are on my <a href="http://github.com/berdaniera">Github page</a>.</p>
+            </div>
+        </div>
+    </section>
+    
+        <!-- About Section -->
+    <section id="publications" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Academic Publications</h2>
+                
+                <h3>&#8729; 2016 &#8729;</h3>
+                <p><u>Berdanier</u>, Miniat, and Clark. Predictive models for radial sap flux variation in coniferous, diffuse-porous, and ring-porous temperate trees. <i>Tree Physiology</i></p>
+                
+                <p><u>Berdanier</u> and Clark. Divergent reproductive allocation trade-offs across species with canopy exposure in temperate forests. <i>Ecosphere</i></p>
+                
+                <p><u>Berdanier</u> and Clark. <a href="http://onlinelibrary.wiley.com/doi/10.1890/15-0274/full">Multiyear drought-induced morbidity preceding tree death in Southeastern U.S. forests</a>. <i>Ecological Applications</i><br>
+                 Media: <a href="http://www.fondriest.com/news/short-term-droughts-can-mean-long-term-struggle-for-trees-in-southeastern-forests.htm">Environmental Monitor</a>, <a href="http://www.eenews.net/climatewire/2015/08/20/stories/1060023696">ClimateWire</a>, <a href="http://www.futurity.org/drought-forests-trees-985242/">Futurity</a>, <a href="http://phys.org/news/2015-08-drought-implicated-death-trees-southeastern.html">Phys.org</a></p>
+                 
+                <h3>&#8729; 2014 &#8729;</h3>
+                <p>Ernakovich, Hopping, <u>Berdanier</u>, Simpson, Kachergis, Steltzer, and Wallenstein. <a href="http://onlinelibrary.wiley.com/doi/10.1111/gcb.12568/abstract">Predicted responses of arctic and alpine ecosystems to altered seasonality under climate change</a>. <i>Global Change Biology</i></p>
+                 
+                <h3>&#8729; 2013 &#8729;</h3>
+                <p><u>Berdanier</u>. <a href="http://tiee.esa.org/vol/v9/experiments/berdanier/abstract.html">Leaves as thermometers</a>. <i>Teaching Issues and Experiments in Ecology</i></p>
+                
+                <p>Conant, <u>Berdanier</u>, and Grace. <a href="http://onlinelibrary.wiley.com/doi/10.1002/gbc.20053/abstract">Patterns and trends in nitrogen use and nitrogen recovery efficiency in world agriculture</a>. <i>Global Biogeochemical Cycles</i></p>
+                 
+                <h3>&#8729; 2012 &#8729;</h3>
+                <p>Valle and <u>Berdanier</u>. <a href="http://www.esajournals.org/doi/abs/10.1890/0012-9623-93.4.373">Computer programming skills for environmental sciences</a>. <i>Bulletin of the Ecological Society of America</i></p>
+                
+                <p><u>Berdanier</u> and Conant. <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2486.2011.02554.x/abstract">Regionally differentiated estimates of cropland N<sub>2</sub>O emissions reduce uncertainty in global calculations</a>. <i>Global Change Biology</i></p>
+                 
+                <h3>&#8729; 2011 &#8729;</h3>
+                <p>Grossman, <u>Berdanier</u>, Custic, Feeley, Peake, Saenz, and Sitton. <a href="http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=8400252&fulltextType=RA&fileId=S0973534811066168">Integrating photosynthesis, respiration, biomass partitioning, and plant growth: Developing a Microsoft Excel®-based simulation model of Wisconsin Fast Plant (<i>Brassica rapa, Brassicaceae</i>) growth with undergraduate students</a>. <i>Mathematical Modeling of Natural Phenomena</i></p>
+                
+                <p><u>Berdanier</u> and Klein. <a href="http://www.springerlink.com/content/a423054162u07802/">Growing season length and soil moisture interactively constrain high elevation aboveground net primary production</a>. <i>Ecosystems</i></p>
+                
+                <h3>&#8729; 2010 &#8729;</h3>
+                <p><u>Berdanier</u>. <a href="http://www.nature.com/scitable/knowledge/library/global-treeline-position-15897370">Global treeline position</a>. <i>Nature Education Knowledge</i></p>
+          </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="contact" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Make Contact</h2>
+                    <p>Feel free to email me to catch up!</p>
+                    <p><a href="mailto:aaron.berdanier@gmail.com">aaron.berdanier@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- Contact Section
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Make Contact</h2>
+                <p>Feel free to email me to catch up!</p>
+                <p><a href="mailto:aaron.berdanier@gmail.com">aaron.berdanier@gmail.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section 
+    <div id="map"></div>
+    -->
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Aaron Berdanier 2016</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+
+  <script>
+     var height = 1000;
+     //var width = window.innerWidth*0.95;    
+     var width = parseInt(d3.select('.topmain').style('width'), 10);
+     var x = d3.scale.linear().range([0,width]);
+     var y = d3.scale.log().range([height,0]);             
+     var svg = d3.select('.topmain')
+      .append("svg")
+       .attr("width",width)
+       .attr("height",height);
+
+     var dateObj = new Date();
+     var la = "http://waterservices.usgs.gov/nwis/dv/?format=json&sites=02085070&statCd=00003&startDT="
+     var datt = dateObj.getFullYear()
+     var lb = "-01-01&endDT="
+     var datu = dateObj.getFullYear() + "-" + (dateObj.getMonth()+1) + "-" + dateObj.getDate()
+     var link = la.concat(datt).concat(lb).concat(datu);
+     
+     var obs = [];
+     d3.json(link, function(data2){
+      var dat = data2.value.timeSeries[0].values[0].value;
+      var days = 1
+      dat.forEach(function(d){
+        obs.push({ day: +days, value: +d.value })
+        days = days+1
+      });
+
+      d3.csv("DurhamStream.csv", function(data){
+        data.forEach(function(d){
+         d.day = +d.day;
+         d.dmin = +d.dmin;
+         d.dmed = +d.dmed;
+         d.dmax = +d.dmax;
+        });
+      
+        var line = d3.svg.line()
+         .x(function(d) {return x(d.day);})
+         .y(function(d) {return y(d.dmed);});
+        var linemin = d3.svg.line()
+         .x(function(d) {return x(d.day);})
+         .y(function(d) {return y(d.dmin);});
+        var linemax = d3.svg.line()
+         .x(function(d) {return x(d.day);})
+         .y(function(d) {return y(d.dmax);});
+        var lineobs = d3.svg.line()
+         .x(function(d) {return x(d.day);})
+         .y(function(d) {return y(d.value);});
+
+        x.domain(d3.extent(data, function(d){return d.day;}));
+        y.domain([d3.min(data, function(d){return d.dmin;}), d3.max(data, function(d){return d.dmax;})]);
+  
+        svg.append("path")
+         .datum(data)
+          .attr("d",line)
+          .attr("fill","none")
+          .attr("stroke","#ccc")
+          .attr("stroke-width",3);
+        svg.append("path")
+         .datum(data)
+          .attr("d",linemin)
+          .attr("fill","none")
+          .attr("stroke","#bbb")
+          .attr("stroke-width",1);
+        svg.append("path")
+         .datum(data)
+          .attr("d",linemax)
+          .attr("fill","none")
+          .attr("stroke","#ccc")
+          .attr("stroke-width",1);
+        svg.append("path")
+         .datum(obs)
+          .attr("d",lineobs)
+          .attr("fill","none")
+          .attr("stroke","#ff77ee")
+          .attr("stroke-width",2);
+
+        obsx = obs[(Object.keys(obs).length - 1)]
+        svg.append("circle")
+          .attr("r", 8)
+          .attr("cx", x(obsx.day))
+          .attr("cy", y(obsx.value))
+          .style("fill", "#ff77ee");        
+      });
+     });
+    </script>
+
+</body>
+
 </html>
