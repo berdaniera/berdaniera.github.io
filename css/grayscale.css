@@ -304,6 +304,20 @@ a:focus {
     font-weight: 400;
 }
 
+.about-section {
+    /*width: 100%;
+    padding: 0;
+    margin: 0;
+    padding: 10px 0;
+    background: url(../img/aaronweb.png) no-repeat left top scroll;
+    background-color: #fff;
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    background-size: auto 100%;
+    -o-background-size: auto 100%;*/
+}
+
+
 .download-section a {
     color: #eee;
     -webkit-transition: all .2s ease-in-out;
