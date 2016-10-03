@@ -15,12 +15,11 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Martel:400,900' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -32,209 +31,247 @@
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-leaf"></i>  <span class="light">Aaron</span> Berdanier
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#research">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#teaching">Teaching</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#publications">Publications</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$("#menu-close").click();>Aaron</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$("#menu-close").click();>Top</a>
+            </li>
+            <li>
+                <a href="#about" onclick=$("#menu-close").click();>About</a>
+            </li>
+            <li>
+                <a href="#activities" onclick=$("#menu-close").click();>Activities</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick=$("#menu-close").click();>Publications</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+            </li>
+        </ul>
     </nav>
 
-    <!-- Intro Header -->
-    <header class="intro">
-    <div class="topmain"></div>
-    <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Hi, my name is Aaron.</h1>
-                        <p class="intro-text">I'm a data scientist and ecologist.<br>I currently work in Durham, NC on projects related to forests and water.</p>
+    <!-- Header -->
+    <header id="top" class="header">
+      <div class="topmain"></div>
+        <div class="text-vertical-center">
+            <!-- <h1>&nbsp;</h1><h1>&nbsp;</h1><h1>&nbsp;</h1><h1>&nbsp;</h1> -->
+            <h1>Hi, I'm Aaron.</h1>
+            <h2>I'm a data scientist and ecologist.</h2>
+            <h3>I live in Durham, NC and work on projects related to water and forests.<br>
+              You can find me on <a href="https://github.com/berdaniera">GitHub</a> and (sometimes) on <a href="http://twitter.com/berdanier">Twitter</a>...</h3>
+            <!-- <br>
+            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a> -->
+        </div>
+    </header>
 
-                        <h1><a href="mailto:aaron.berdanier@gmail.com" class="btn2">
-                            <i class="fa fa-envelope-o animated"></i>
-                        </a>
-                        <a href="http://linkedin.com/in/aaronberdanier" class="btn2">
-                            <i class="fa fa-linkedin animated"></i>
-                        </a>
-                        <a href="http://github.com/berdaniera" class="btn2">
-                            <i class="fa fa-github animated"></i>
-                        </a>
-                        <a href="http://twitter.com/berdaniera" class="btn2">
-                            <i class="fa fa-twitter animated"></i>
-                        </a></h1>
-                        <br><br>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                  <div class="row">
+                      <div class="col-md-4">
+                        <img class="img-portfolio img-responsive" src="img/Aaron.jpg">
+                      </div>
+                      <div class="col-md-8">
+                        <h2>About me</h2>
+                        <h3><a href="https://docs.google.com/document/d/16_8deP2dOJcqRQ7yyuWxWGpqVEPdSrF5jmW1FcK5lgg/edit?usp=sharing">Professional resume</a> |
+                          <a href="https://docs.google.com/document/d/1qR5Hlqs7oUTZ_McUEwrLc-hIehcbh1kZvz23o0E-jwo/edit?usp=sharing">Academic CV</a></h3>
+                        <p class="lead">
+                          I am a data scientist interested in environmental sensors, water, forests, and entrepreneurship.
+                          As a researcher at Duke University and Colorado State University, I have initiated, collaborated on, and completed scientific projects to measure international greenhouse gas emissions and predict forest responses to climate.
+                          My academic work is published in multiple peer-reviewed journals.<br><br>
+
+                          Currently I provide analytical and computational support for an international, NSF-funded project to characterize the metabolic pulse of streams.<br><br>
+
+                          I have a Ph.D. degree from Duke University, a M.S. degree from Colorado State University, and a B.S. degree from Beloit College.
+                          I am interested in applying my analytical skills to help people better manage their relationships with their data and the environment.<br><br>
+
+                          I also love restoring my old house in Durham, making maps, climbing, and doing yoga.
+                        </p>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="activities" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>What I Do</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-wrench fa-stack-1x text-primary"></i>
+                            </span>
+                                <h3>
+                                    <strong>Statistical modeling and analysis</strong>
+                                </h3>
+                                <h4>I create and use Bayesian, frequentist, and machine learning models for inference and prediction.
+                                  I am experienced with time-series and geospatial analysis.
+                                </h4>
+                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cogs fa-stack-1x text-primary"></i>
+                            </span>
+                                <h3>
+                                    <strong>Data wrangling</strong>
+                                </h3>
+                                <h4>I build infrastructure for scientific analysis in R and Python, including parallel and distributed computing.
+                                  I am experienced at extracting and using data from online portals.
+                                </h4>
+                                <a href="https://github.com/berdaniera" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-database fa-stack-1x text-primary"></i>
+                            </span>
+                                <h3>
+                                    <strong>Data management</strong>
+                                </h3>
+                                <h4>I work with SQL databases to efficiently organize and extract data.
+                                  I have also created web-facing RESTful APIs and online data management dashboards.</h4>
+                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                            </span>
+                                <h3>
+                                    <strong>Scientific communication</strong>
+                                </h3>
+                                <h4>My scientific research is published in peer-revewed journals and highlighted in media outlets.
+                                  I am excited about interactive visualizations and public presentation.
+                                </h4>
+                                <a href="#portfolio" class="btn btn-light">Learn more</a>
+                            </div>
+                        </div>
                     </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <center><h2>Scientific Work</h2></center>
+                    <hr class="small">
+                    <div class="row">
+                      <h4>Berdanier, Miniat, and Clark (2016) <a href="http://treephys.oxfordjournals.org/content/36/8/932">Predictive models for radial sap flux variation in coniferous, diffuse-porous and ring-porous temperate trees.</a> <i>Tree Physiology</i> 36: 932-941. <strong><a href="http://treephys.oxfordjournals.org/content/36/8/929.full">Commentary</a></strong></h4>
+                      <h4>Berdanier and Clark (2016) <a href="http://onlinelibrary.wiley.com/doi/10.1002/ecs2.1313/abstract">Divergent reproductive allocation trade-offs with canopy exposure across tree species in temperate forests.</a> <i>Ecosphere</i> 7: e01313.</h4>
+                      <h4>Berdanier and Clark (2016) <a href="http://onlinelibrary.wiley.com/doi/10.1890/15-0274/full">Multiyear drought-induced morbidity preceding tree death in southeastern US forests.</a> <i>Ecological Applications</i> 26: 17-23. <strong>Media coverage:</strong> <a href="http://www.fondriest.com/news/short-term-droughts-can-mean-long-term-struggle-for-trees-in-southeastern-forests.htm">Environmental Monitor</a>, <a href="http://www.eenews.net/climatewire/2015/08/20/stories/1060023696">ClimateWire</a>, <a href="http://www.futurity.org/drought-forests-trees-985242/">Futurity</a>, <a href="http://phys.org/news/2015-08-drought-implicated-death-trees-southeastern.html">Phys.org</a></h4>
+                      <h4>Ernakovich, Hopping, Berdanier, Simpson, Kachergis, Steltzer and Wallenstein (2014) <a href="http://onlinelibrary.wiley.com/doi/10.1111/gcb.12568/abstract">Predicted responses of arctic and alpine ecosystems to altered seasonality under climate change.</a> <i>Global Change Biology</i> 20: 3256-3269.</h4>
+                      <h4>Berdanier (2013) <a href="http://tiee.esa.org/vol/v9/experiments/berdanier/abstract.html">Leaves as thermometers.</a> <i>Teaching Issues and Experiments in Ecology</i> 9: 1.</h4>
+                      <h4>Conant, Berdanier, and Grace (2013) <a href="http://onlinelibrary.wiley.com/doi/10.1002/gbc.20053/abstract">Patterns and trends in nitrogen use and nitrogen recovery efficiency in world agriculture.</a> <i>Global Biogeochemical Cycles</i> 27: 558-586.</h4>
+                      <h4>Valle and Berdanier (2012) <a href="http://www.esajournals.org/doi/abs/10.1890/0012-9623-93.4.373">Computer programming skills for environmental sciences.</a> <i>Bulletin of the Ecological Society of America</i> 93: 373-389.</h4>
+                      <h4>Berdanier and Conant (2012) <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2486.2011.02554.x/abstract">Regionally differentiated estimates of cropland N2O emissions reduce uncertainty in global calculations.</a> <i>Global Change Biology</i> 18: 928-935.</h4>
+                      <h4>Grossman, Berdanier, Custic, Feeley, Peake, Saenz, and Sitton. (2011) <a href="http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=8400252&fulltextType=RA&fileId=S0973534811066168">Integrating photosynthesis, respiration, biomass partitioning, and plant growth: Developing a Microsoft Excel®-based simulation model of Wisconsin Fast Plant (Brassica rapa, Brassicaceae) growth with undergraduate students.</a> <i>Mathematical Modeling of Natural Phenomena</i> 6: 295-313.</h4>
+                      <h4>Berdanier and Klein (2011) <a href="http://www.springerlink.com/content/a423054162u07802/">Growing season length and soil moisture interactively constrain high elevation aboveground net primary production.</a> <i>Ecosystems</i> 14: 963-974.</h4>
+                      <h4>Berdanier (2010) <a href="http://www.nature.com/scitable/knowledge/library/global-treeline-position-15897370">Global treeline position.</a> <i>Nature Education Knowledge</i> 1: 11.</h4>
+<!--
+                        <div class="col-md-4">
+                          <div class="portfolio-text">
+                            <a href="http://onlinelibrary.wiley.com/doi/10.1890/15-0274/full" class="btn btn-dark">Berdanier and Clark 2016, Ecological Applications</a>
+                          </div>
+                          <div class="portfolio-item">
+                            <a href="http://onlinelibrary.wiley.com/doi/10.1890/15-0274/full"><img class="img-portfolio img-responsive" src="img/portfolio-1.jpg"></a>
+                          </div>
+                        </div> -->
+
+                    </div>
+                    <!-- /.row (nested) -->
+                    <!-- <a href="#" class="btn btn-dark">View More Items</a> -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <!-- <h1>Vertically Centered Text</h1> -->
+        </div>
+    </aside>
+
+
+    <!-- Call to Action
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>The buttons below are impossible to resist.</h3>
+                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
+                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
                 </div>
             </div>
         </div>
-  </header>
+    </aside> -->
 
-    <!-- About Section -->
-    <section id="about" class="content-section text-center">
-        <div class="about-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                <p><img src="img/aaronweb2.png"></p>
-                    <h2>About Me</h2>
-                <p>My resume: <a href="https://docs.google.com/document/d/16_8deP2dOJcqRQ7yyuWxWGpqVEPdSrF5jmW1FcK5lgg/edit?usp=sharing" class="btn2">
-                            <i class="fa fa-file-text-o animated"></i>
-                  </a>
-                </p>
-<p>I am a statistician interested in forests and water, data science, and entrepreneurship. As a researcher at Duke University and Colorado State University, I have initiated, collaborated on, and completed scientific projects to measure international greenhouse gas emissions and predict forest responses to climate. My academic work is <a class="page-scroll" href="#publications">published in multiple peer-reviewed journals</a>.</p>
-                <p>I have a Ph.D. degree from Duke University, a M.S. degree from Colorado State University, and a B.S. degree from Beloit College. I am interested in applying my analytical skills to help people better manage their relationships with their data and the environment.</p>
-                <p>I also love restoring my old house in Durham, making maps, climbing, and doing yoga.</p>
-                </div>
-            </div>
-      </div>
-    </section>
-
-
-<!-- About Section -->
-    <section id="research" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Projects</h2>
-                <p>My current scientific projects are focused on the impacts of trees on the water cycle and the consequences of changing forests for water supplies and quality. I like to combine data from environmental sensor networks with mathematical models. Recently, I examined the response of forests to drought with colleagues, where we predicted tree death after droughts. I have also worked on global greenouse gas budgets to understand how agricultural practices affect nitrogen cycling.</p>
-                <p>I am continually thinking about how my work can add value for people. I was involved in a project to develop an advanced system for measuring forests with remote sensing and unmanned aerial vehicles that is easy to use for both small and large forest landowners. This project provided knowledge that could someday be used for rapid forest inventories and reliable carbon accounting.</p>
-            </div>
-        </div>
-    </section>
-
-        <!-- About Section -->
-    <section id="teaching" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Teaching</h2>
-                <p>I am excited about helping students learn science by doing what scientists do—collecting and analyzing data, synthesizing information, and communicating results to a variety of audiences.</p>
-
-<p>I have developed multiple inquiry-based educational modules for undergraduate and graduate students and I encourage active exploration and discussion in my lectures and exercises. I have taught courses at Duke University and Beloit College, including courses on plant biology, global change biology, and environmental science. I have also given guest lectures in data science and environmental statistics courses at Duke.</p>
-
-<p>Also at Duke, I have co-organized a working group on environmental data analysis and visualization with <a href="http://www.matthewrvross.com/">Matt Ross</a>. Lessons for that course are on my <a href="http://github.com/berdaniera">Github page</a>.</p>
-            </div>
-        </div>
-    </section>
-
-        <!-- About Section -->
-    <section id="publications" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Academic Publications</h2>
-
-                <h3>&#8729; 2016 &#8729;</h3>
-                <p><u>Berdanier</u>, Miniat, and Clark. Predictive models for radial sap flux variation in coniferous, diffuse-porous, and ring-porous temperate trees. <i>Tree Physiology</i></p>
-
-                <p><u>Berdanier</u> and Clark. Divergent reproductive allocation trade-offs across species with canopy exposure in temperate forests. <i>Ecosphere</i></p>
-
-                <p><u>Berdanier</u> and Clark. <a href="http://onlinelibrary.wiley.com/doi/10.1890/15-0274/full">Multiyear drought-induced morbidity preceding tree death in Southeastern U.S. forests</a>. <i>Ecological Applications</i><br>
-                 Media: <a href="http://www.fondriest.com/news/short-term-droughts-can-mean-long-term-struggle-for-trees-in-southeastern-forests.htm">Environmental Monitor</a>, <a href="http://www.eenews.net/climatewire/2015/08/20/stories/1060023696">ClimateWire</a>, <a href="http://www.futurity.org/drought-forests-trees-985242/">Futurity</a>, <a href="http://phys.org/news/2015-08-drought-implicated-death-trees-southeastern.html">Phys.org</a></p>
-
-                <h3>&#8729; 2014 &#8729;</h3>
-                <p>Ernakovich, Hopping, <u>Berdanier</u>, Simpson, Kachergis, Steltzer, and Wallenstein. <a href="http://onlinelibrary.wiley.com/doi/10.1111/gcb.12568/abstract">Predicted responses of arctic and alpine ecosystems to altered seasonality under climate change</a>. <i>Global Change Biology</i></p>
-
-                <h3>&#8729; 2013 &#8729;</h3>
-                <p><u>Berdanier</u>. <a href="http://tiee.esa.org/vol/v9/experiments/berdanier/abstract.html">Leaves as thermometers</a>. <i>Teaching Issues and Experiments in Ecology</i></p>
-
-                <p>Conant, <u>Berdanier</u>, and Grace. <a href="http://onlinelibrary.wiley.com/doi/10.1002/gbc.20053/abstract">Patterns and trends in nitrogen use and nitrogen recovery efficiency in world agriculture</a>. <i>Global Biogeochemical Cycles</i></p>
-
-                <h3>&#8729; 2012 &#8729;</h3>
-                <p>Valle and <u>Berdanier</u>. <a href="http://www.esajournals.org/doi/abs/10.1890/0012-9623-93.4.373">Computer programming skills for environmental sciences</a>. <i>Bulletin of the Ecological Society of America</i></p>
-
-                <p><u>Berdanier</u> and Conant. <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2486.2011.02554.x/abstract">Regionally differentiated estimates of cropland N<sub>2</sub>O emissions reduce uncertainty in global calculations</a>. <i>Global Change Biology</i></p>
-
-                <h3>&#8729; 2011 &#8729;</h3>
-                <p>Grossman, <u>Berdanier</u>, Custic, Feeley, Peake, Saenz, and Sitton. <a href="http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=8400252&fulltextType=RA&fileId=S0973534811066168">Integrating photosynthesis, respiration, biomass partitioning, and plant growth: Developing a Microsoft Excel®-based simulation model of Wisconsin Fast Plant (<i>Brassica rapa, Brassicaceae</i>) growth with undergraduate students</a>. <i>Mathematical Modeling of Natural Phenomena</i></p>
-
-                <p><u>Berdanier</u> and Klein. <a href="http://www.springerlink.com/content/a423054162u07802/">Growing season length and soil moisture interactively constrain high elevation aboveground net primary production</a>. <i>Ecosystems</i></p>
-
-                <h3>&#8729; 2010 &#8729;</h3>
-                <p><u>Berdanier</u>. <a href="http://www.nature.com/scitable/knowledge/library/global-treeline-position-15897370">Global treeline position</a>. <i>Nature Education Knowledge</i></p>
-          </div>
-        </div>
-    </section>
-
-    <!-- Download Section -->
-    <section id="contact" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Make Contact</h2>
-                    <p>Feel free to email me to catch up!</p>
-                    <p><a href="mailto:aaron.berdanier@gmail.com">aaron.berdanier@gmail.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <!-- Contact Section
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Make Contact</h2>
-                <p>Feel free to email me to catch up!</p>
-                <p><a href="mailto:aaron.berdanier@gmail.com">aaron.berdanier@gmail.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul> -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section
-    <div id="map"></div>
-    -->
     <!-- Footer -->
     <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Aaron Berdanier 2016</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.linkedin.com/in/aaronberdanier"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/berdaniera"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://twitter.com/berdaniera"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="mailto:aaron.berdanier@gmail.com"><i class="fa fa-envelope-o fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <!-- <hr class="small"> -->
+                    <p class="text-muted">Copyright &copy; Aaron Berdanier 2016<br>
+                    Durham, North Carolina</p>
+                </div>
+            </div>
         </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
 
     <!-- jQuery -->
@@ -243,102 +280,147 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> -->
-
     <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    </script>
 
+    <script>
+       //var height = 1000;
+       var height = parseInt(d3.select('.header').style('height'), 10);
+       //var width = window.innerWidth*0.95;
+       var width = parseInt(d3.select('.header').style('width'), 10);
+       var x = d3.scale.linear().range([0,width]);
+       var y = d3.scale.log().range([height,0]);
+       var svg = d3.select('.topmain')
+        .append("svg")
+         .attr("width",width)
+         .attr("height",height);
 
-  <script>
-     //var height = 1000;
-     var height = parseInt(d3.select('.intro-body').style('height'), 10);
-     //var width = window.innerWidth*0.95;
-     var width = parseInt(d3.select('.intro-body').style('width'), 10);
-     var x = d3.scale.linear().range([0,width]);
-     var y = d3.scale.log().range([height,0]);
-     var svg = d3.select('.topmain')
-      .append("svg")
-       .attr("width",width)
-       .attr("height",height);
+       var dateObj = new Date();
+       var la = "http://waterservices.usgs.gov/nwis/dv/?format=json&sites=02085070&statCd=00003&startDT="
+       var datt = dateObj.getFullYear()
+       var lb = "-01-01&endDT="
+       var datu = dateObj.getFullYear() + "-" + (dateObj.getMonth()+1) + "-" + dateObj.getDate()
+       var link = la.concat(datt).concat(lb).concat(datu);
 
-     var dateObj = new Date();
-     var la = "http://waterservices.usgs.gov/nwis/dv/?format=json&sites=02085070&statCd=00003&startDT="
-     var datt = dateObj.getFullYear()
-     var lb = "-01-01&endDT="
-     var datu = dateObj.getFullYear() + "-" + (dateObj.getMonth()+1) + "-" + dateObj.getDate()
-     var link = la.concat(datt).concat(lb).concat(datu);
-
-     var obs = [];
-     d3.json(link, function(data2){
-      var dat = data2.value.timeSeries[0].values[0].value;
-      var days = 1
-      dat.forEach(function(d){
-        obs.push({ day: +days, value: +d.value })
-        days = days+1
-      });
-
-      d3.csv("DurhamStream.csv", function(data){
-        data.forEach(function(d){
-         d.day = +d.day;
-         d.dmin = +d.dmin;
-         d.dmed = +d.dmed;
-         d.dmax = +d.dmax;
+       var obs = [];
+       d3.json(link, function(data2){
+        var dat = data2.value.timeSeries[0].values[0].value;
+        var days = 1
+        dat.forEach(function(d){
+          obs.push({ day: +days, value: +d.value })
+          days = days+1
         });
 
-        var line = d3.svg.line()
-         .x(function(d) {return x(d.day);})
-         .y(function(d) {return y(d.dmed);});
-        var linemin = d3.svg.line()
-         .x(function(d) {return x(d.day);})
-         .y(function(d) {return y(d.dmin);});
-        var linemax = d3.svg.line()
-         .x(function(d) {return x(d.day);})
-         .y(function(d) {return y(d.dmax);});
-        var lineobs = d3.svg.line()
-         .x(function(d) {return x(d.day);})
-         .y(function(d) {return y(d.value);});
+        d3.csv("DurhamStream.csv", function(data){
+          data.forEach(function(d){
+           d.day = +d.day;
+           d.dmin = +d.dmin;
+           d.dmed = +d.dmed;
+           d.dmax = +d.dmax;
+          });
 
-        x.domain(d3.extent(data, function(d){return d.day;}));
-        y.domain([d3.min(data, function(d){return d.dmin;}), d3.max(data, function(d){return d.dmax;})]);
+          var line = d3.svg.line()
+           .x(function(d) {return x(d.day);})
+           .y(function(d) {return y(d.dmed);});
+          var linemin = d3.svg.line()
+           .x(function(d) {return x(d.day);})
+           .y(function(d) {return y(d.dmin);});
+          var linemax = d3.svg.line()
+           .x(function(d) {return x(d.day);})
+           .y(function(d) {return y(d.dmax);});
+          var lineobs = d3.svg.line()
+           .x(function(d) {return x(d.day);})
+           .y(function(d) {return y(d.value);});
 
-        svg.append("path")
-         .datum(data)
-          .attr("d",line)
-          .attr("fill","none")
-          .attr("stroke","#ccc")
-          .attr("stroke-width",3);
-        svg.append("path")
-         .datum(data)
-          .attr("d",linemin)
-          .attr("fill","none")
-          .attr("stroke","#bbb")
-          .attr("stroke-width",1);
-        svg.append("path")
-         .datum(data)
-          .attr("d",linemax)
-          .attr("fill","none")
-          .attr("stroke","#ccc")
-          .attr("stroke-width",1);
-        svg.append("path")
-         .datum(obs)
-          .attr("d",lineobs)
-          .attr("fill","none")
-          .attr("stroke","#ff77ee")
-          .attr("stroke-width",2);
+          x.domain(d3.extent(data, function(d){return d.day;}));
+          y.domain([d3.min(data, function(d){return d.dmin;}), d3.max(data, function(d){return d.dmax;})]);
 
-        obsx = obs[(Object.keys(obs).length - 1)]
-        svg.append("circle")
-          .attr("r", 8)
-          .attr("cx", x(obsx.day))
-          .attr("cy", y(obsx.value))
-          .style("fill", "#ff77ee");
-      });
-     });
-    </script>
+          svg.append("path")
+           .datum(data)
+            .attr("d",line)
+            .attr("fill","none")
+            .attr("stroke","#666")
+            .attr("stroke-width",3);
+          svg.append("path")
+           .datum(data)
+            .attr("d",linemin)
+            .attr("fill","none")
+            .attr("stroke","#666")
+            .attr("stroke-width",1);
+          svg.append("path")
+           .datum(data)
+            .attr("d",linemax)
+            .attr("fill","none")
+            .attr("stroke","#666")
+            .attr("stroke-width",1);
+          svg.append("path")
+           .datum(obs)
+            .attr("d",lineobs)
+            .attr("fill","none")
+            .attr("stroke","#337ab7")
+            .attr("stroke-width",3);
+
+          obsx = obs[(Object.keys(obs).length - 1)]
+          svg.append("circle")
+            .attr("r", 8)
+            .attr("cx", x(obsx.day))
+            .attr("cy", y(obsx.value))
+            .style("fill", "#337ab7");
+        });
+       });
+      </script>
+
 
 </body>
 
