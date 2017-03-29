@@ -432,9 +432,10 @@
             .style("fill", "#337ab7");
 
           svg.append("text")
-            .attr("x", x(obsx.day+1))
+            .attr("x", x(obsx.day+2))
             .attr("y", y(obsx.value))
-            .text(dateObj.slice(0,15))
+            .style("font-style","italic")
+            .text(Date().slice(0,15))
             .style("fill","#337ab7");
         });
        });
