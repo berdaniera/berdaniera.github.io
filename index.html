@@ -430,6 +430,12 @@
             .attr("cx", x(obsx.day))
             .attr("cy", y(obsx.value))
             .style("fill", "#337ab7");
+
+          svg.append("text")
+            .attr("x", x(obsx.day+1))
+            .attr("y", y(obsx.value))
+            .text(dateObj.slice(0,15))
+            .style("fill","#337ab7");
         });
        });
       </script>
