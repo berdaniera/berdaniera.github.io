@@ -1,456 +1,65 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
     <title>Aaron Berdanier</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <style>
+      body {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+      h3 {
+        margin-top: 2rem;
+      }
+    </style>
+    <script src="https://use.fontawesome.com/7cd26e4f50.js"></script>
+  </head>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <body class="full">
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <h1 class="display-4">My name is Aaron Berdanier</h1>
+          <p class="lead"><i class="fa fa-terminal" aria-hidden="true"></i> I'm a data scientist at <a href="http://transloc.com">TransLoc</a> where I help <i class="fa fa-bus" aria-hidden="true"></i> transit agencies understand their data.</p>
+          <p>I really like analyzing spatio-temporal data.
+            I've worked on a range of environmental and statistical topics throughout my career. Large projects include
+            <i class="fa fa-database" aria-hidden="true"></i> building data infrastructure for an <a href="http://streampulse.org">international stream monitoring network</a> at Duke University,
+            <i class="fa fa-bar-chart" aria-hidden="true"></i> analyzing global agricultural greenhouse gas emissions at Colorado State University, and
+            <i class="fa fa-university" aria-hidden="true"></i> teaching undergraduate courses at both Duke University and Beloit College.
+          </p>
+          <p>I was a fellow at <i class="fa fa-certificate" aria-hidden="true"></i> The Data Incubator, where I worked on classification models with remote sensing data,
+            and I have a <i class="fa fa-graduation-cap" aria-hidden="true"></i> PhD in Ecology from Duke University,
+            where I used Bayesian state-space models to understand tree water use and predict forest responses to drought.
+            My <a href="https://scholar.google.com/citations?user=t3ebYTIAAAAJ&hl=en">academic work</a> is published in <i class="fa fa-book" aria-hidden="true"></i> multiple peer-reviewed journals.
+             </p>
 
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
+          <p class="lead">I live in <i class="fa fa-map-marker" aria-hidden="true"></i> Durham, NC where I enjoy restoring my old house, making maps, and doing long-distance running, climbing, and yoga.</p>
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>Aaron</a>
-            </li>
-            <li>
-                <a href="#top" onclick=$("#menu-close").click();>Top</a>
-            </li>
-            <li>
-                <a href="#about" onclick=$("#menu-close").click();>About</a>
-            </li>
-            <li>
-                <a href="#activities" onclick=$("#menu-close").click();>Activities</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>Publications</a>
-            </li>
-            <li>
-                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Header -->
-    <header id="top" class="header">
-      <div class="topmain"></div>
-        <div class="text-vertical-center">
-            <!-- <h1>&nbsp;</h1><h1>&nbsp;</h1><h1>&nbsp;</h1><h1>&nbsp;</h1> -->
-            <h1>Hi, I'm Aaron.</h1>
-            <h2>I'm a data scientist and ecologist.</h2>
-            <h3>I live in Durham, NC and work on projects related to water and forests.<br>
-              You can find me on <a href="https://github.com/berdaniera">GitHub</a> and (sometimes) on <a href="http://twitter.com/berdanier">Twitter</a>...</h3>
-            <!-- <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a> -->
         </div>
-    </header>
-
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                  <div class="row">
-                      <div class="col-md-4">
-                        <img class="img-portfolio img-responsive" src="img/Aaron.jpg">
-                      </div>
-                      <div class="col-md-8">
-                        <h2>About me</h2>
-                        <h3><a href="https://docs.google.com/document/d/16_8deP2dOJcqRQ7yyuWxWGpqVEPdSrF5jmW1FcK5lgg/edit?usp=sharing">Professional resume</a> |
-                          <a href="https://docs.google.com/document/d/1qR5Hlqs7oUTZ_McUEwrLc-hIehcbh1kZvz23o0E-jwo/edit?usp=sharing">Academic CV</a></h3>
-                        <p class="lead">
-                          I am a data scientist interested in water, forests, environmental sensors, and entrepreneurship.
-                          As a researcher at Duke University and Colorado State University, I have initiated, collaborated on, and completed scientific projects to measure international greenhouse gas emissions and predict forest responses to climate.
-                          My academic work is published in multiple peer-reviewed journals.<br><br>
-
-                          Currently I provide analytical and computational support for an international, NSF-funded project to characterize the metabolic pulse of streams.<br><br>
-
-                          I have a Ph.D. degree from Duke University, a M.S. degree from Colorado State University, and a B.S. degree from Beloit College.
-                          I am interested in applying my analytical skills to help people better manage their relationships with their data and the environment.<br><br>
-
-                          I also love restoring my old house in Durham, making maps, climbing, and doing yoga.
-                        </p>
-                      </div>
-                  </div>
-                </div>
-            </div>
-            <!-- /.row -->
+        <div class="col">
+          <img src="aaron.jpg" class="img-fluid rounded">
         </div>
-        <!-- /.container -->
-    </section>
+      </div>
 
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="activities" class="services bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>What I Do</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-wrench fa-stack-1x text-primary"></i>
-                            </span>
-                                <h3>
-                                    <strong>Statistical modeling and analysis</strong>
-                                </h3>
-                                <h4>I create and use Bayesian and machine learning models for prediction and inference.
-                                  I am experienced with time-series and geospatial analysis.
-                                </h4>
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cogs fa-stack-1x text-primary"></i>
-                            </span>
-                                <h3>
-                                    <strong>Data wrangling</strong>
-                                </h3>
-                                <h4>I build infrastructure for scientific analysis in R, Python, and Scala.
-                                  I am experienced at extracting and using data from online portals.
-                                </h4><br>
-                                <a href="https://github.com/berdaniera" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-database fa-stack-1x text-primary"></i>
-                            </span>
-                                <h3>
-                                    <strong>Data management</strong>
-                                </h3>
-                                <h4>I create and work with databases (SQL/NoSQL) to efficiently organize and extract data.
-                                  I have also created web-facing RESTful APIs and online data management dashboards.</h4><br>
-                                <a href="http://data.streampulse.org" class="btn btn-light">Check out an example</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                            </span>
-                                <h3>
-                                    <strong>Scientific communication</strong>
-                                </h3>
-                                <h4>My scientific research is published in peer-revewed journals and highlighted in media outlets.
-                                  I am excited about interactive visualizations and public presentation.
-                                </h4><br>
-                                <a href="#portfolio" class="btn btn-light">Learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-              <div class="col-lg-10 col-lg-offset-1">
-                <center><h2>Recent Projects</h2></center>
-                <hr class="small">
-                <div class="row">
-                  <div class="col-lg-6">
-                  <a href="http://digitalbiome.io">
-                    <img src="img/digitalbiome.jpg"><br>
-                    <p class="lead">Digital Biome</p>
-                    an API for your data
-                  </a>
-                  </div>
-                  <div class="col-lg-6">
-                  <a href="http://www.rsrchd.com">
-                    <img src="img/rlogo.png"><br>
-                    <p class="lead">rsrchd.com</p>
-                    a social aggregation platform for finding scientific research articles
-                  </a>
-                  </div>
-                </div>
-              </div>
-            </div><br>
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <center><h2>Scientific Work</h2></center>
-                    <hr class="small">
-                    <div class="row">
-                      <h4>Berdanier, Miniat, and Clark (2016) <a href="http://treephys.oxfordjournals.org/content/36/8/932">Predictive models for radial sap flux variation in coniferous, diffuse-porous and ring-porous temperate trees.</a> <i>Tree Physiology</i> 36: 932-941. <strong><a href="http://treephys.oxfordjournals.org/content/36/8/929.full">Commentary</a></strong></h4>
-                      <h4>Berdanier and Clark (2016) <a href="http://onlinelibrary.wiley.com/doi/10.1002/ecs2.1313/abstract">Divergent reproductive allocation trade-offs with canopy exposure across tree species in temperate forests.</a> <i>Ecosphere</i> 7: e01313.</h4>
-                      <h4>Berdanier and Clark (2016) <a href="http://onlinelibrary.wiley.com/doi/10.1890/15-0274/full">Multiyear drought-induced morbidity preceding tree death in southeastern US forests.</a> <i>Ecological Applications</i> 26: 17-23. <strong>Media coverage:</strong> <a href="http://www.fondriest.com/news/short-term-droughts-can-mean-long-term-struggle-for-trees-in-southeastern-forests.htm">Environmental Monitor</a>, <a href="http://www.eenews.net/climatewire/2015/08/20/stories/1060023696">ClimateWire</a>, <a href="http://www.futurity.org/drought-forests-trees-985242/">Futurity</a>, <a href="http://phys.org/news/2015-08-drought-implicated-death-trees-southeastern.html">Phys.org</a></h4>
-                      <h4>Ernakovich, Hopping, Berdanier, Simpson, Kachergis, Steltzer and Wallenstein (2014) <a href="http://onlinelibrary.wiley.com/doi/10.1111/gcb.12568/abstract">Predicted responses of arctic and alpine ecosystems to altered seasonality under climate change.</a> <i>Global Change Biology</i> 20: 3256-3269.</h4>
-                      <h4>Berdanier (2013) <a href="http://tiee.esa.org/vol/v9/experiments/berdanier/abstract.html">Leaves as thermometers.</a> <i>Teaching Issues and Experiments in Ecology</i> 9: 1.</h4>
-                      <h4>Conant, Berdanier, and Grace (2013) <a href="http://onlinelibrary.wiley.com/doi/10.1002/gbc.20053/abstract">Patterns and trends in nitrogen use and nitrogen recovery efficiency in world agriculture.</a> <i>Global Biogeochemical Cycles</i> 27: 558-586.</h4>
-                      <h4>Valle and Berdanier (2012) <a href="http://www.esajournals.org/doi/abs/10.1890/0012-9623-93.4.373">Computer programming skills for environmental sciences.</a> <i>Bulletin of the Ecological Society of America</i> 93: 373-389.</h4>
-                      <h4>Berdanier and Conant (2012) <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2486.2011.02554.x/abstract">Regionally differentiated estimates of cropland N2O emissions reduce uncertainty in global calculations.</a> <i>Global Change Biology</i> 18: 928-935.</h4>
-                      <h4>Grossman, Berdanier, Custic, Feeley, Peake, Saenz, and Sitton. (2011) <a href="http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=8400252&fulltextType=RA&fileId=S0973534811066168">Integrating photosynthesis, respiration, biomass partitioning, and plant growth: Developing a Microsoft Excel®-based simulation model of Wisconsin Fast Plant (Brassica rapa, Brassicaceae) growth with undergraduate students.</a> <i>Mathematical Modeling of Natural Phenomena</i> 6: 295-313.</h4>
-                      <h4>Berdanier and Klein (2011) <a href="http://www.springerlink.com/content/a423054162u07802/">Growing season length and soil moisture interactively constrain high elevation aboveground net primary production.</a> <i>Ecosystems</i> 14: 963-974.</h4>
-                      <h4>Berdanier (2010) <a href="http://www.nature.com/scitable/knowledge/library/global-treeline-position-15897370">Global treeline position.</a> <i>Nature Education Knowledge</i> 1: 11.</h4>
-<!--
-                        <div class="col-md-4">
-                          <div class="portfolio-text">
-                            <a href="http://onlinelibrary.wiley.com/doi/10.1890/15-0274/full" class="btn btn-dark">Berdanier and Clark 2016, Ecological Applications</a>
-                          </div>
-                          <div class="portfolio-item">
-                            <a href="http://onlinelibrary.wiley.com/doi/10.1890/15-0274/full"><img class="img-portfolio img-responsive" src="img/portfolio-1.jpg"></a>
-                          </div>
-                        </div> -->
-
-                    </div>
-                    <!-- /.row (nested) -->
-                    <!-- <a href="#" class="btn btn-dark">View More Items</a> -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <!-- <h1>Vertically Centered Text</h1> -->
-        </div>
-    </aside>
+      <div class="footer text-muted lead">
+        <hr>
+        You can reach me online at&nbsp;
+                  <a href="mailto:aaron.berdanier@gmail.com"><i class="fa fa-envelope" aria-label="Email"></i> aaron.berdanier at gmail.com</a>,
+                  <a href="http://twitter.com/berdaniera"><i class="fa fa-twitter" aria-label="Twitter"></i> @berdaniera</a>, or
+                  <a href="http://github.com/berdaniera"><i class="fa fa-github" aria-label="Github"></i> @berdaniera</a>.</div>
 
 
-    <!-- Call to Action
-    <aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
-                </div>
-            </div>
-        </div>
-    </aside> -->
+    </div> <!-- /container -->
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="https://www.linkedin.com/in/aaronberdanier"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/berdaniera"><i class="fa fa-github fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="http://twitter.com/berdaniera"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="mailto:aaron.berdanier@gmail.com"><i class="fa fa-envelope-o fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-                    <!-- <hr class="small"> -->
-                    <p class="text-muted">Copyright &copy; Aaron Berdanier 2016<br>
-                    Durham, North Carolina</p>
-                </div>
-            </div>
-        </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    //#to-top button appears after scrolling
-    var fixed = false;
-    $(document).scroll(function() {
-        if ($(this).scrollTop() > 250) {
-            if (!fixed) {
-                fixed = true;
-                // $('#to-top').css({position:'fixed', display:'block'});
-                $('#to-top').show("slow", function() {
-                    $('#to-top').css({
-                        position: 'fixed',
-                        display: 'block'
-                    });
-                });
-            }
-        } else {
-            if (fixed) {
-                fixed = false;
-                $('#to-top').hide("slow", function() {
-                    $('#to-top').css({
-                        display: 'none'
-                    });
-                });
-            }
-        }
-    });
-    </script>
-
-    <script>
-       //var height = 1000;
-       var height = parseInt(d3.select('.header').style('height'), 10);
-       //var width = window.innerWidth*0.95;
-       var width = parseInt(d3.select('.header').style('width'), 10);
-       var x = d3.scale.linear().range([0,width]);
-       var y = d3.scale.log().range([height,0]);
-       var svg = d3.select('.topmain')
-        .append("svg")
-         .attr("width",width)
-         .attr("height",height);
-
-       var dateObj = new Date();
-       var la = "https://waterservices.usgs.gov/nwis/dv/?format=json&sites=02085070&statCd=00003&startDT="
-       var datt = dateObj.getFullYear()
-       var lb = "-01-01&endDT="
-       var datu = dateObj.getFullYear() + "-" + (dateObj.getMonth()+1) + "-" + dateObj.getDate()
-       var link = la.concat(datt).concat(lb).concat(datu);
-
-       var obs = [];
-       d3.json(link, function(data2){
-        var dat = data2.value.timeSeries[0].values[0].value;
-        var days = 1
-        dat.forEach(function(d){
-          obs.push({ day: +days, value: +d.value })
-          days = days+1
-        });
-
-        d3.csv("DurhamStream.csv", function(data){
-          data.forEach(function(d){
-           d.day = +d.day;
-           d.dmin = +d.dmin;
-           d.dmed = +d.dmed;
-           d.dmax = +d.dmax;
-          });
-
-          var line = d3.svg.line()
-           .x(function(d) {return x(d.day);})
-           .y(function(d) {return y(d.dmed);});
-          var linemin = d3.svg.line()
-           .x(function(d) {return x(d.day);})
-           .y(function(d) {return y(d.dmin);});
-          var linemax = d3.svg.line()
-           .x(function(d) {return x(d.day);})
-           .y(function(d) {return y(d.dmax);});
-          var lineobs = d3.svg.line()
-           .x(function(d) {return x(d.day);})
-           .y(function(d) {return y(d.value);});
-
-          x.domain(d3.extent(data, function(d){return d.day;}));
-          y.domain([d3.min(data, function(d){return d.dmin;}), d3.max(data, function(d){return d.dmax;})]);
-
-          svg.append("path")
-           .datum(data)
-            .attr("d",line)
-            .attr("fill","none")
-            .attr("stroke","#666")
-            .attr("stroke-width",3);
-          svg.append("path")
-           .datum(data)
-            .attr("d",linemin)
-            .attr("fill","none")
-            .attr("stroke","#666")
-            .attr("stroke-width",1);
-          svg.append("path")
-           .datum(data)
-            .attr("d",linemax)
-            .attr("fill","none")
-            .attr("stroke","#666")
-            .attr("stroke-width",1);
-          svg.append("path")
-           .datum(obs)
-            .attr("d",lineobs)
-            .attr("fill","none")
-            .attr("stroke","#337ab7")
-            .attr("stroke-width",3);
-
-          obsx = obs[(Object.keys(obs).length - 1)]
-          svg.append("circle")
-            .attr("r", 8)
-            .attr("cx", x(obsx.day))
-            .attr("cy", y(obsx.value))
-            .style("fill", "#337ab7");
-
-          svg.append("text")
-            .attr("x", x(obsx.day+2))
-            .attr("y", y(obsx.value))
-            .style("font-style","italic")
-            .text(Date().slice(0,15))
-            .style("fill","#337ab7");
-        });
-       });
-      </script>
-
-
-</body>
-
+  </body>
 </html>
